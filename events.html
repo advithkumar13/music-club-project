@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Harmony Music Club — Events</title>
+  <meta name="description" content="Upcoming Harmony Music Club events — jam nights, workshops, and our Spring Showcase. Register online.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="container nav-inner">
+      <a class="brand" href="index.html"><span class="logo">&#127925;</span> Harmony Music Club</a>
+      <button class="nav-toggle" onclick="toggleNav()" aria-label="Menu">&#9776;</button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="events.html">Events</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- Page header -->
+  <section class="hero" style="padding:80px 0 64px;">
+    <div class="container">
+      <h1>Upcoming Events</h1>
+      <p class="tagline">Come play, learn, and perform with us. Register below to save your spot — it's free for all members!</p>
+    </div>
+  </section>
+
+  <!-- Event list -->
+  <section class="section">
+    <div class="container">
+      <div class="grid" style="gap:18px;">
+
+        <div class="event">
+          <div class="date"><span class="month">Jun</span><span class="day">20</span></div>
+          <div class="info">
+            <h3>Open Jam Night</h3>
+            <p class="meta">&#128197; Friday, June 20, 2026 &nbsp;&bull;&nbsp; &#128336; 6:00–8:00 PM &nbsp;&bull;&nbsp; &#128205; School Band Room</p>
+            <p>An open, no-pressure jam for all instruments and skill levels. Bring your gear or borrow ours, and just play. Snacks provided!</p>
+          </div>
+        </div>
+
+        <div class="event">
+          <div class="date"><span class="month">Jul</span><span class="day">11</span></div>
+          <div class="info">
+            <h3>Songwriting Workshop</h3>
+            <p class="meta">&#128197; Saturday, July 11, 2026 &nbsp;&bull;&nbsp; &#128336; 1:00–3:30 PM &nbsp;&bull;&nbsp; &#128205; Music Room 204</p>
+            <p>Learn to write your own song from scratch — lyrics, melody, and chords — with help from club mentors and a guest songwriter.</p>
+          </div>
+        </div>
+
+        <div class="event">
+          <div class="date"><span class="month">Aug</span><span class="day">15</span></div>
+          <div class="info">
+            <h3>Spring Showcase Concert</h3>
+            <p class="meta">&#128197; Saturday, August 15, 2026 &nbsp;&bull;&nbsp; &#128336; 7:00–9:00 PM &nbsp;&bull;&nbsp; &#128205; School Auditorium</p>
+            <p>Our biggest event of the year! Perform live on stage for friends, family, and the whole school. All members welcome to sign up.</p>
+          </div>
+        </div>
+
+        <div class="event">
+          <div class="date"><span class="month">Sep</span><span class="day">05</span></div>
+          <div class="info">
+            <h3>Community Open Mic</h3>
+            <p class="meta">&#128197; Friday, September 5, 2026 &nbsp;&bull;&nbsp; &#128336; 6:30–8:30 PM &nbsp;&bull;&nbsp; &#128205; Local Coffee House</p>
+            <p>A relaxed open mic out in the community. Sign up for a slot to share a song or two with a friendly crowd.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Registration form (mockup) -->
+  <section class="section alt">
+    <div class="container">
+      <span class="eyebrow">Save Your Spot</span>
+      <h2>Event Registration</h2>
+      <p class="lead">Fill out the form below to register for an event. We'll send a confirmation to your email.</p>
+
+      <form class="form" data-mock>
+        <div class="form-success">&#127881; Thanks! Your registration has been received. See you there!</div>
+
+        <div class="form-grid">
+          <div class="form-row">
+            <label for="reg-name">Full Name</label>
+            <input type="text" id="reg-name" name="name" placeholder="Your name" required>
+          </div>
+          <div class="form-row">
+            <label for="reg-email">Email Address</label>
+            <input type="email" id="reg-email" name="email" placeholder="you@email.com" required>
+          </div>
+        </div>
+
+        <div class="form-grid">
+          <div class="form-row">
+            <label for="reg-event">Which Event?</label>
+            <select id="reg-event" name="event" required>
+              <option value="">— Choose an event —</option>
+              <option>Open Jam Night (Jun 20)</option>
+              <option>Songwriting Workshop (Jul 11)</option>
+              <option>Spring Showcase Concert (Aug 15)</option>
+              <option>Community Open Mic (Sep 5)</option>
+            </select>
+          </div>
+          <div class="form-row">
+            <label for="reg-instrument">Instrument / Role</label>
+            <input type="text" id="reg-instrument" name="instrument" placeholder="Guitar, vocals, drums, etc.">
+          </div>
+        </div>
+
+        <div class="form-row">
+          <label for="reg-notes">Anything we should know? (optional)</label>
+          <textarea id="reg-notes" name="notes" placeholder="Special requests, questions, or which song you'd like to perform..."></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Register Now</button>
+        <p class="form-note">This is a demo form for the club website. No information is sent or stored.</p>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="events.html">Events</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <p>&copy; 2026 Harmony Music Club. Made with &#9829; by student musicians.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
